@@ -36,14 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
       taskInput.value = ''; // Очищаем поле ввода
     }
   
-    // Добавляем обработчик события для нажатия клавиши Enter
-    taskInput.addEventListener('keydown', function (event) {
-      if (event.key === 'Enter') {
-        event.preventDefault();
-        addTask();
-      }
-    });
-  
     // Добавляем обработчик события для отправки формы
     tasksForm.addEventListener('submit', function (event) {
       event.preventDefault();
